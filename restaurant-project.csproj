@@ -91,6 +91,8 @@
     <Compile Include="Models\PagamentoDAO.cs" />
     <Compile Include="Models\Recebimento.cs" />
     <Compile Include="Models\RecebimentoDAO.cs" />
+    <Compile Include="Models\TelaIinicial.cs" />
+    <Compile Include="Models\TelaInicialDAO.cs" />
     <Compile Include="Views\CadastroCaixa.xaml.cs">
       <DependentUpon>CadastroCaixa.xaml</DependentUpon>
     </Compile>
@@ -141,6 +143,9 @@
     </Compile>
     <Compile Include="Views\Recebimento.xaml.cs">
       <DependentUpon>Recebimento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TelaInicial.xaml.cs">
+      <DependentUpon>TelaInicial.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -236,6 +241,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Recebimento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TelaInicial.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
