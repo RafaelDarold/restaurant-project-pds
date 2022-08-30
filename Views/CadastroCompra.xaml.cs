@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace restaurant_project
+namespace restaurant_project.Views
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para CadastroCompra.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CadastroCompra : Window
     {
-        public MainWindow()
+        public CadastroCompra()
         {
             InitializeComponent();
         }

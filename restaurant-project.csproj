@@ -55,17 +55,97 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="Database\Conexao.cs" />
+    <Compile Include="Helpers\DAOHelper.cs" />
+    <Compile Include="Models\CadastroCaixa.cs" />
+    <Compile Include="Models\CadastroCaixaDAO.cs" />
+    <Compile Include="Models\CadastroCardapio.cs" />
+    <Compile Include="Models\CadastroCardapioDAO.cs" />
+    <Compile Include="Models\CadastroCliente.cs" />
+    <Compile Include="Models\CadastroClienteDAO.cs" />
+    <Compile Include="Models\CadastroCompra.cs" />
+    <Compile Include="Models\CadastroCompraDAO.cs" />
+    <Compile Include="Models\CadastroDespesa.cs" />
+    <Compile Include="Models\CadastroDespesaDAO.cs" />
+    <Compile Include="Models\CadastroEntrega.cs" />
+    <Compile Include="Models\CadastroEntregaDAO.cs" />
+    <Compile Include="Models\CadastroFornecedor.cs" />
+    <Compile Include="Models\CadastroFornecedorDAO.cs" />
+    <Compile Include="Models\CadastroFuncionario.cs" />
+    <Compile Include="Models\CadastroFuncionarioDAO.cs" />
+    <Compile Include="Models\CadastroHorarioFuncionamento.cs" />
+    <Compile Include="Models\CadastroHorarioFuncionamentoDAO.cs" />
+    <Compile Include="Models\CadastroMesa.cs" />
+    <Compile Include="Models\CadastroMesaDAO.cs" />
+    <Compile Include="Models\CadastroPedido.cs" />
+    <Compile Include="Models\CadastroPedidoDAO.cs" />
+    <Compile Include="Models\CadastroProduto.cs" />
+    <Compile Include="Models\CadastroProdutoDAO.cs" />
+    <Compile Include="Models\CadastroReserva.cs" />
+    <Compile Include="Models\CadastroReservaDAO.cs" />
+    <Compile Include="Models\CadastroTerceiros.cs" />
+    <Compile Include="Models\CadastroTerceirosDAO.cs" />
+    <Compile Include="Models\CadastroVenda.cs" />
+    <Compile Include="Models\CadastroVendaDAO.cs" />
+    <Compile Include="Models\Pagamento.cs" />
+    <Compile Include="Models\PagamentoDAO.cs" />
+    <Compile Include="Views\CadastroCaixa.xaml.cs">
+      <DependentUpon>CadastroCaixa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroCardapio.xaml.cs">
+      <DependentUpon>CadastroCardapio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroCliente.xaml.cs">
+      <DependentUpon>CadastroCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroCompra.xaml.cs">
+      <DependentUpon>CadastroCompra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroDespesa.xaml.cs">
+      <DependentUpon>CadastroDespesa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroEntrega.xaml.cs">
+      <DependentUpon>CadastroEntrega.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroEntregador.xaml.cs">
+      <DependentUpon>CadastroEntregador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroFornecedor.xaml.cs">
+      <DependentUpon>CadastroFornecedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroFuncionario.xaml.cs">
+      <DependentUpon>CadastroFuncionario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroHorarioFuncionamento.xaml.cs">
+      <DependentUpon>CadastroHorarioFuncionamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroMesa.xaml.cs">
+      <DependentUpon>CadastroMesa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroPedido.xaml.cs">
+      <DependentUpon>CadastroPedido.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroProduto.xaml.cs">
+      <DependentUpon>CadastroProduto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroReserva.xaml.cs">
+      <DependentUpon>CadastroReserva.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroTerceiros.xaml.cs">
+      <DependentUpon>CadastroTerceiros.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroVenda.xaml.cs">
+      <DependentUpon>CadastroVenda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pagamento.xaml.cs">
+      <DependentUpon>Pagamento.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +173,81 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="Views\CadastroCaixa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroCardapio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroCompra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroDespesa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroEntrega.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroEntregador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroFornecedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroHorarioFuncionamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroMesa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroPedido.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroProduto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroReserva.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroTerceiros.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroVenda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pagamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
