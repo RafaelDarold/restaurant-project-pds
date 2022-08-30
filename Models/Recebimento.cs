@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace restaurant_project.Models
 {
-    internal class CadastroHorarioFuncionamentoDAO
+    internal class Recebimento
     {
     }
 }
