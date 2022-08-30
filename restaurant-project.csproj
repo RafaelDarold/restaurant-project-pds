@@ -77,8 +77,6 @@
     <Compile Include="Models\CadastroFornecedorDAO.cs" />
     <Compile Include="Models\CadastroFuncionario.cs" />
     <Compile Include="Models\CadastroFuncionarioDAO.cs" />
-    <Compile Include="Models\CadastroHorarioFuncionamento.cs" />
-    <Compile Include="Models\CadastroHorarioFuncionamentoDAO.cs" />
     <Compile Include="Models\CadastroMesa.cs" />
     <Compile Include="Models\CadastroMesaDAO.cs" />
     <Compile Include="Models\CadastroPedido.cs" />
@@ -87,12 +85,12 @@
     <Compile Include="Models\CadastroProdutoDAO.cs" />
     <Compile Include="Models\CadastroReserva.cs" />
     <Compile Include="Models\CadastroReservaDAO.cs" />
-    <Compile Include="Models\CadastroTerceiros.cs" />
-    <Compile Include="Models\CadastroTerceirosDAO.cs" />
     <Compile Include="Models\CadastroVenda.cs" />
     <Compile Include="Models\CadastroVendaDAO.cs" />
     <Compile Include="Models\Pagamento.cs" />
     <Compile Include="Models\PagamentoDAO.cs" />
+    <Compile Include="Models\Recebimento.cs" />
+    <Compile Include="Models\RecebimentoDAO.cs" />
     <Compile Include="Views\CadastroCaixa.xaml.cs">
       <DependentUpon>CadastroCaixa.xaml</DependentUpon>
     </Compile>
@@ -120,9 +118,6 @@
     <Compile Include="Views\CadastroFuncionario.xaml.cs">
       <DependentUpon>CadastroFuncionario.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\CadastroHorarioFuncionamento.xaml.cs">
-      <DependentUpon>CadastroHorarioFuncionamento.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\CadastroMesa.xaml.cs">
       <DependentUpon>CadastroMesa.xaml</DependentUpon>
     </Compile>
@@ -135,9 +130,6 @@
     <Compile Include="Views\CadastroReserva.xaml.cs">
       <DependentUpon>CadastroReserva.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\CadastroTerceiros.xaml.cs">
-      <DependentUpon>CadastroTerceiros.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\CadastroVenda.xaml.cs">
       <DependentUpon>CadastroVenda.xaml</DependentUpon>
     </Compile>
@@ -146,6 +138,9 @@
     </Compile>
     <Compile Include="Views\Pagamento.xaml.cs">
       <DependentUpon>Pagamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Recebimento.xaml.cs">
+      <DependentUpon>Recebimento.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -212,10 +207,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\CadastroHorarioFuncionamento.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\CadastroMesa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -232,10 +223,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\CadastroTerceiros.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\CadastroVenda.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -245,6 +232,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pagamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Recebimento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
