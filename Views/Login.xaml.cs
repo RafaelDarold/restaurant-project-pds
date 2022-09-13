@@ -23,5 +23,22 @@ namespace restaurant_project.Views
         {
             InitializeComponent();
         }
+
+        private void Label_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var form = new TelaInicial();
+            form.Show();
+            this.Close();
+        }
+
+        private void CliqueAqui_Click(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

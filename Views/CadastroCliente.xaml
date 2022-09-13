@@ -5,8 +5,112 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:restaurant_project.Views"
         mc:Ignorable="d"
-        Title="CadastroCliente" Height="450" Width="800" ResizeMode="NoResize">
-    <Grid>
-        
+        Title="Cadastro de Cliente" Height="630" Width="800" ResizeMode="NoResize">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Cadastro de Cliente" FontSize="24" FontFamily="Corbel Light"/>
+
+        <Grid Grid.Row="1" Background="AliceBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="10">
+                <Label Content="Informações de Registro" FontSize="20" FontFamily="Corbel Light" FontWeight="Normal"/>
+
+                <Label Content="Nome do Cliente" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtNomeCliente" Padding="8"></TextBox>
+
+                <Label Content="Renda Familiar" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtRendaFamiliar" Padding="8"></TextBox>
+
+                <Label Content="Telefone" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtTelefone" Padding="8"></TextBox>
+
+                <Label Content="CPF" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtInscricaoEstadual" Padding="8"></TextBox>
+
+                <Label Content="RG" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtRG" Padding="8"></TextBox>
+
+                <Label Content="Email" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtEmail" Padding="8"></TextBox>
+
+                <Label Content="Data de Nascimento" FontSize="18" FontFamily="Corbel"/>
+                <DatePicker x:Name="dataNascimentoDP"></DatePicker>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="10">
+                <Label Content="Informações de Localização" FontSize="20" FontFamily="Corbel Light"/>
+
+                <WrapPanel>
+                    <Label Content="Rua" FontSize="18" Margin="0 0 160 0" FontFamily="Corbel"/>
+                    <Label Content="Nº" FontSize="18" FontFamily="Corbel"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBox x:Name="txtRua" Padding="8" Width="150" Margin="0 0 50 0"></TextBox>
+                    <TextBox x:Name="txtNumeroCasa" Padding="8" Width="100" Cursor="Arrow"></TextBox>
+                </WrapPanel>
+
+                <WrapPanel>
+                    <Label Content="Bairro" FontSize="18" Margin="0 0 145 0" FontFamily="Corbel"/>
+                    <Label Content="Complemento" FontSize="18" FontFamily="Corbel"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBox x:Name="txtBairro" Padding="8" Width="150" Margin="0 0 50 0"></TextBox>
+                    <TextBox x:Name="txtComplemento" Padding="8" Width="150"></TextBox>
+                </WrapPanel>
+
+                <WrapPanel>
+                    <Label Content="CEP" FontSize="18" Margin="0 0 90 0" FontFamily="Corbel"/>
+                    <Label Content="Cidade" FontSize="18" Margin="0 0 60 0" FontFamily="Corbel"/>
+                    <Label Content="Estado" FontSize="18" FontFamily="Corbel"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBox x:Name="txtCep" Padding="8" Width="100" Margin="0 0 30 0"></TextBox>
+                    <TextBox x:Name="txtCidade" Padding="8" Width="100" Margin="0 0 20 0"></TextBox>
+                    <ComboBox x:Name="txtEstado" Padding="8" Width="100">
+                        <ComboBoxItem>Acre</ComboBoxItem>
+                        <ComboBoxItem>Alagoas</ComboBoxItem>
+                        <ComboBoxItem>Amapá</ComboBoxItem>
+                        <ComboBoxItem>Amazonas</ComboBoxItem>
+                        <ComboBoxItem>Bahia</ComboBoxItem>
+                        <ComboBoxItem>Ceará</ComboBoxItem>
+                        <ComboBoxItem>Distrito Federal</ComboBoxItem>
+                        <ComboBoxItem>Espírito Santo</ComboBoxItem>
+                        <ComboBoxItem>Goiás</ComboBoxItem>
+                        <ComboBoxItem>Maranhão</ComboBoxItem>
+                        <ComboBoxItem>Mato Grosso</ComboBoxItem>
+                        <ComboBoxItem>Mato Grosso do Sul</ComboBoxItem>
+                        <ComboBoxItem>Minas Gerais</ComboBoxItem>
+                        <ComboBoxItem>Pará</ComboBoxItem>
+                        <ComboBoxItem>Paraíba</ComboBoxItem>
+                        <ComboBoxItem>Paraná</ComboBoxItem>
+                        <ComboBoxItem>Pernambuco</ComboBoxItem>
+                        <ComboBoxItem>Piauí</ComboBoxItem>
+                        <ComboBoxItem>Rio de Janeiro</ComboBoxItem>
+                        <ComboBoxItem>Rio Grande do Norte</ComboBoxItem>
+                        <ComboBoxItem>Rio Grande do Sul</ComboBoxItem>
+                        <ComboBoxItem>Rondônia</ComboBoxItem>
+                        <ComboBoxItem>Roraima</ComboBoxItem>
+                        <ComboBoxItem>Santa Catarina</ComboBoxItem>
+                        <ComboBoxItem>São Paulo</ComboBoxItem>
+                        <ComboBoxItem>Sergipe</ComboBoxItem>
+                        <ComboBoxItem>Tocantins</ComboBoxItem>
+                    </ComboBox>
+                </WrapPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button x:Name="saveBT" HorizontalAlignment="Right" Content="Salvar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White"></Button>
+        </Grid>
     </Grid>
 </Window>
