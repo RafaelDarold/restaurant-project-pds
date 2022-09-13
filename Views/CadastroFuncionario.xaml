@@ -7,7 +7,23 @@
         mc:Ignorable="d"
         Title="CadastroFuncionario" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Label Content="Cadastro de Funcionários&#xD;&#xA;"/>
+
+        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
+        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
+
+        <Label x:Name="CadastroFuncionários" Content="Cadastro de Funcionários&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,20,0,-18"/>
+        <Label Content="Nome Completo" Margin="38,83,594,320" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="38,114,594,291"/>
+
+        <Label Content="Nome Completo" Margin="38,83,594,320" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="38,114,594,291"/>
+
+        <Label Content="Nome Completo" Margin="38,83,594,320" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="38,114,594,291"/>
+
+
+
+
     </Grid>
 
 </Window>
