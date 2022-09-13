@@ -156,6 +156,9 @@
     <Compile Include="Views\Pagamento.xaml.cs">
       <DependentUpon>Pagamento.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pedido.xaml.cs">
+      <DependentUpon>Pedido.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Recebimento.xaml.cs">
       <DependentUpon>Recebimento.xaml</DependentUpon>
     </Compile>
@@ -255,6 +258,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pagamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pedido.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

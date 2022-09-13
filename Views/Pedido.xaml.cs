@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace restaurant_project.Views
 {
     /// <summary>
-    /// Lógica interna para TelaInicial.xaml
+    /// Lógica interna para Pedido.xaml
     /// </summary>
-    public partial class TelaInicial : Window
+    public partial class Pedido : Window
     {
-        public TelaInicial()
+        public Pedido()
         {
             InitializeComponent();
-        }
-
-        private void pedido_Click(object sender, RoutedEventArgs e)
-        {
-            var form = new Pedido();
-            form.Show();
-            this.Close();
         }
     }
 }
