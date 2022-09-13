@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        
+        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
+        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
+        <Image Margin="238,108,238,108" Source="/Images/Card Background.png" Stretch="Fill"/>
+
+        <Label Content="Comidas da Vovó" HorizontalAlignment="Center" Margin="0,139,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
