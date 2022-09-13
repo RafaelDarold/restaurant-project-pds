@@ -11,6 +11,6 @@
         <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
         <Image Margin="238,108,238,108" Source="/Images/Card Background.png" Stretch="Fill"/>
 
-        <Label Content="Label" HorizontalAlignment="Center" Margin="0,139,0,0" VerticalAlignment="Top"/>
+        <Label Content="Comidas da Vovó" HorizontalAlignment="Center" Margin="0,139,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
