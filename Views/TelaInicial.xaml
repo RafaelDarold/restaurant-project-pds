@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:restaurant_project.Views"
         mc:Ignorable="d"
         Title="TelaInicial" Height="450" Width="800">
-    <Grid>
-        
+    <Grid RenderTransformOrigin="0.745,0.507">
+        <Image Margin="238,74,238,47" Source="/Images/Card Background.png" Stretch="Fill"/>
+        <Label x:Name="Comidas_vovó" Content="Comidas da Vovó&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,20,0,-18"/>
+        <Button x:Name="Pagamento" Content="Pagamento" HorizontalAlignment="Center" Margin="0,159,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="35"/>
+        <Button x:Name="Pratos" Content="Pratos" HorizontalAlignment="Center" Margin="0,214,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34"/>
+        <Button x:Name="Produtos" Content="Produtos" HorizontalAlignment="Center" Margin="0,269,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="35"/>
+        <Button x:Name="Funcionários" Content="funcionários" HorizontalAlignment="Center" Margin="0,326,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="35"/>
+
+        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
+        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
+
+
     </Grid>
+
 </Window>

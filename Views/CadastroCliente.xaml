@@ -6,7 +6,39 @@
         xmlns:local="clr-namespace:restaurant_project.Views"
         mc:Ignorable="d"
         Title="CadastroCliente" Height="450" Width="800" ResizeMode="NoResize">
-    <Grid>
-        
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Cadastro de Cliente" FontSize="24" FontFamily="Corbel Light"/>
+
+        <Grid Grid.Row="1" Background="AliceBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="10">
+                <Label Content="Informações de Registro" FontSize="20" FontFamily="Corbel Light" FontWeight="Normal"/>
+
+                <Label Content="Nome" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtNome" Padding="8"></TextBox>
+
+                <Label Content="Carga Horária" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtCargaHoraria" Padding="8"></TextBox>
+
+                <Label Content="Turno" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtTurno" Padding="8"></TextBox>
+
+                <Label Content="Descricao" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtDescricao" Padding="8"></TextBox>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button x:Name="saveBT" HorizontalAlignment="Right" Content="Salvar" Height="30" Width="100" Margin="10 0" Cursor="" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Click="saveBT_Click"/>
+        </Grid>
     </Grid>
 </Window>

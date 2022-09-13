@@ -18,7 +18,7 @@ namespace restaurant_project.Database
 
         private static string password = "root";
 
-        private static string dbname = "dssistemas_db";
+        private static string dbname = "projeto_restaurante";
 
         private static MySqlConnection connection;
 
