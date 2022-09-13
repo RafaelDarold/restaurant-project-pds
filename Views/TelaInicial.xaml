@@ -8,12 +8,7 @@
         Title="TelaInicial" Height="450" Width="800">
     <Grid RenderTransformOrigin="0.745,0.507">
         <Image Margin="238,74,238,47" Source="/Images/Card Background.png" Stretch="Fill"/>
-
-
         <Label x:Name="Comidas_vovó" Content="Comidas da Vovó&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,20,0,-18"/>
-        <Border >
-            <Button x:Name="pedido" Content="Pedido" HorizontalAlignment="Center" Margin="0,103,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34"/>
-        </Border>
         <Button x:Name="Pagamento" Content="Pagamento" HorizontalAlignment="Center" Margin="0,159,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="35"/>
         <Button x:Name="Pratos" Content="Pratos" HorizontalAlignment="Center" Margin="0,214,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34"/>
         <Button x:Name="Produtos" Content="Produtos" HorizontalAlignment="Center" Margin="0,269,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="35"/>
