@@ -23,5 +23,30 @@ namespace restaurant_project.Views
         {
             InitializeComponent();
         }
+
+        private void Label_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void CliqueAqui_Click(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

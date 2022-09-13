@@ -7,10 +7,15 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
+        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill" RenderTransformOrigin="0.494,0.38"/>
         <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
         <Image Margin="238,108,238,108" Source="/Images/Card Background.png" Stretch="Fill"/>
+        <Label Content="LOGIN" HorizontalAlignment="Center" Margin="0,139,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.024,0.555"/>
+        <Button Content="Entrar" HorizontalAlignment="Center" Margin="0,269,0,0" VerticalAlignment="Top" Width="82" Click="Button_Click" Background="#FFFF9900" Foreground="White"/>
+        <Label Content="Esqueceu a senha?" HorizontalAlignment="Center" Margin="0,289,0,0" VerticalAlignment="Top" Width="184" Grid.IsSharedSizeScope="True" AutomationProperties.IsColumnHeader="True"/>
+        <Label Content="Clique aqui " Margin="413,289,308,0" VerticalAlignment="Top" Grid.IsSharedSizeScope="True" AutomationProperties.IsColumnHeader="True" MouseDoubleClick="CliqueAqui_Click" Foreground="#FFFF9900"/>
 
-        <Label Content="Comidas da Vovó" HorizontalAlignment="Center" Margin="0,139,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="___txtUsuario_" HorizontalAlignment="Center" Margin="0,181,0,0" TextWrapping="Wrap" Text="Usuário&#x9;" VerticalAlignment="Top" Width="67" TextChanged="TextBox_TextChanged_1" TextAlignment="Center"/>
+        <TextBox x:Name="___txtSenha_" HorizontalAlignment="Center" Margin="0,227,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top" Width="67" TextChanged="TextBox_TextChanged" TextAlignment="Center"/>
     </Grid>
 </Window>
