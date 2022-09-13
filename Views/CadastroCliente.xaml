@@ -42,7 +42,7 @@
 
                 <Label Content="Email" FontSize="18" FontFamily="Corbel"/>
                 <TextBox x:Name="txtEmail" Padding="8"></TextBox>
-
+                
                 <Label Content="Data de Nascimento" FontSize="18" FontFamily="Corbel"/>
                 <DatePicker x:Name="dataNascimentoDP"></DatePicker>
             </StackPanel>
