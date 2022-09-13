@@ -191,7 +191,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Blob Esquerda.png" />
+    <Resource Include="Images\Blob Direita.png" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\CadastroCaixa.xaml">
@@ -268,8 +268,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Blob Direita.png" />
+    <Resource Include="Images\Blob Esquerda.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\Card Background.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
