@@ -23,5 +23,10 @@ namespace restaurant_project.Views
         {
             InitializeComponent();
         }
+
+        private void saveBT_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
