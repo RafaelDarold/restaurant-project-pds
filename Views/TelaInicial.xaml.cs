@@ -30,5 +30,12 @@ namespace restaurant_project.Views
             form.Show();
             this.Close();
         }
+
+        private void Funcionários_Click(object sender, RoutedEventArgs e)
+        {
+            var form = new CadastroFuncionario();
+            form.Show();
+            this.Close();
+        }
     }
 }

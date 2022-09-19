@@ -42,7 +42,7 @@
 
                 <Label Content="Email" FontSize="18" FontFamily="Corbel"/>
                 <TextBox x:Name="txtEmail" Padding="8"></TextBox>
-
+                
                 <Label Content="Data de Nascimento" FontSize="18" FontFamily="Corbel"/>
                 <DatePicker x:Name="dataNascimentoDP"></DatePicker>
             </StackPanel>
@@ -110,7 +110,7 @@
         </Grid>
 
         <Grid Grid.Row="2">
-            <Button x:Name="saveBT" HorizontalAlignment="Right" Content="Salvar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White"></Button>
+            <Button x:Name="saveBT" HorizontalAlignment="Right" Content="Salvar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White" Click="saveBT_Click"></Button>
         </Grid>
     </Grid>
 </Window>
