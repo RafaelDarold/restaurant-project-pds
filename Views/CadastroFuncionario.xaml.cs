@@ -23,5 +23,15 @@ namespace restaurant_project.Views
         {
             InitializeComponent();
         }
+
+        private void Cad_funcionario_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

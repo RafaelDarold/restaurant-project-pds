@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="CadastroMesa" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        
+        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
+        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
+
+
+
     </Grid>
 </Window>
