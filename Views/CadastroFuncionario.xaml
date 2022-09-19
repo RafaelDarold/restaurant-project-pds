@@ -7,6 +7,49 @@
         mc:Ignorable="d"
         Title="CadastroFuncionario" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
-        
+
+        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
+        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
+
+        <Label x:Name="CadastroCPF" Content="Cadastro dos Funcionários&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,20,0,-18"/>
+        <Label Content="Nome Completo" Margin="38,182,594,220" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="38,202,594,202"/>
+
+        <Label Content="E-mail" Margin="38,302,594,101" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="38,322,594,82"/>
+
+        <Label Content="CPF" Margin="38,241,594,161" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="38,258,594,147"/>
+
+        <Label Content="RG" Margin="296,118,336,284" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="296,135,336,269"/>
+
+        <Label Content="Telefone" Margin="296,237,336,166" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="296,257,336,147"/>
+
+        <Label Content="CPF" Margin="296,178,336,224" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="296,194,336,211"/>
+
+        <Label Content="Endereço" Margin="296,287,336,115" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="296,308,336,97"/>
+
+        <Label Content="Cidade" Margin="296,342,336,60" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="296,358,336,46"/>
+
+        <Label Content="Estado Civil" Margin="546,177,86,226" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="546,193,86,211"/>
+
+        <Label Content="Cargo" Margin="546,118,86,284" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="546,136,86,269"/>
+
+        <Label Content="Data de nascimento" Margin="546,237,86,166" FontSize="15"/>
+        <DataGrid Margin="551,268,103,137"></DataGrid>
+
+
+
+
+
+
     </Grid>
+
 </Window>

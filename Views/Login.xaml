@@ -10,10 +10,10 @@
         <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill" RenderTransformOrigin="0.494,0.38"/>
         <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
         <Image Margin="238,108,238,108" Source="/Images/Card Background.png" Stretch="Fill"/>
-        <Label Content="LOGIN" HorizontalAlignment="Center" Margin="0,139,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.024,0.555"/>
+        <Label Content="LOGIN" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.024,0.555"/>
         <Button Content="Entrar" HorizontalAlignment="Center" Margin="0,269,0,0" VerticalAlignment="Top" Width="82" Click="Button_Click" Background="#FFFF9900" Foreground="White"/>
-        <Label Content="Esqueceu a senha?" HorizontalAlignment="Center" Margin="0,289,0,0" VerticalAlignment="Top" Width="184" Grid.IsSharedSizeScope="True" AutomationProperties.IsColumnHeader="True"/>
-        <Label Content="Clique aqui " Margin="413,289,308,0" VerticalAlignment="Top" Grid.IsSharedSizeScope="True" AutomationProperties.IsColumnHeader="True" MouseDoubleClick="CliqueAqui_Click" Foreground="#FFFF9900"/>
+        <Label Content="Esqueceu a senha?" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Width="215" Grid.IsSharedSizeScope="True" AutomationProperties.IsColumnHeader="True"/>
+        <Label Content="Clique aqui " Margin="391,300,330,0" VerticalAlignment="Top" Grid.IsSharedSizeScope="True" AutomationProperties.IsColumnHeader="True" MouseDoubleClick="CliqueAqui_Click" Foreground="#FFFF9900"/>
 
         <Label Content="Usuário" FontSize="12" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Width="67"/>
         <TextBox x:Name="txtUsuario" HorizontalAlignment="Center" Margin="0,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" TextAlignment="Center"/>
