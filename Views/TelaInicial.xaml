@@ -16,7 +16,7 @@
         <Button x:Name="Funcionários" Content="funcionários" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="35" Click="Funcionários_Click"/>
         <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
         <Image Margin="0,0,647,319" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
-        <Button x:Name="Cliente" Content="Cliente" HorizontalAlignment="Center" Margin="0,377,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34"/>
+        <Button x:Name="Cliente" Content="Cliente" HorizontalAlignment="Center" Margin="0,377,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34" Click="Cliente_Click"/>
 
 
     </Grid>

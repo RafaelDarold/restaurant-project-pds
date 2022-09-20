@@ -58,5 +58,12 @@ namespace restaurant_project.Views
             form.Show();
             this.Close();
         }
+
+        private void Cliente_Click(object sender, RoutedEventArgs e)
+        {
+            var form = new CadastroCliente();
+            form.Show();
+            this.Close();
+        }
     }
 }

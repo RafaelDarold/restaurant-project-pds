@@ -26,7 +26,7 @@
                 
                 
                 <Label Content="Usuário" FontSize="12" HorizontalAlignment="Center" />
-                <TextBox x:Name="txtUsuario" Margin="0 10" />
+                <TextBox x:Name="txtUsuario" Margin="0 10" TextAlignment="Center" />
                 <Label Content="Senha" FontSize="12" HorizontalAlignment="Center" />
                 <TextBox x:Name="txtSenha" Margin="0 10" TextAlignment="Center" />
                 <Button Content="Entrar" Margin="0 10" HorizontalAlignment="Center" Click="Button_Click" Background="#FFFF9900" Foreground="White"/>
