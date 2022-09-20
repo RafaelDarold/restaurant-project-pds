@@ -146,8 +146,14 @@
     <Compile Include="Views\CadastroMesa.xaml.cs">
       <DependentUpon>CadastroMesa.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CadastroPagamento.xaml.cs">
+      <DependentUpon>CadastroPagamento.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CadastroPedido.xaml.cs">
       <DependentUpon>CadastroPedido.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastroPratos.xaml.cs">
+      <DependentUpon>CadastroPratos.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CadastroProduto.xaml.cs">
       <DependentUpon>CadastroProduto.xaml</DependentUpon>
@@ -160,9 +166,6 @@
     </Compile>
     <Compile Include="Views\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Pagamento.xaml.cs">
-      <DependentUpon>Pagamento.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pedido.xaml.cs">
       <DependentUpon>Pedido.xaml</DependentUpon>
@@ -245,7 +248,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\CadastroPagamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\CadastroPedido.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CadastroPratos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -262,10 +273,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Login.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Pagamento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace restaurant_project.Views
 {
     /// <summary>
-    /// Lógica interna para Pagamento.xaml
+    /// Lógica interna para CadastroPratos.xaml
     /// </summary>
-    public partial class Pagamento : Window
+    public partial class CadastroPratos : Window
     {
-        public Pagamento()
+        public CadastroPratos()
         {
             InitializeComponent();
         }
