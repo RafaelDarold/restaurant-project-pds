@@ -1,0 +1,267 @@
+#Aluno: Rafael angelo darold, Rahyan Ramos de Oliveira, Mateus Haffermann, Emanuelle Alves, Kauan Ambrosio de Oliveira.
+
+create database bt_project_restaurant;
+use bt_project_restaurant;
+
+create Table Entregador_app(
+id_app int primary key auto_increment,
+nome_app varchar(300),
+sexo_app varchar(100),
+foto_app blob,
+idade_app date,
+rg_app varchar(100),
+cnh_app varchar(100),
+cpf_app Varchar(100),
+aplicativo_app varchar(200),
+email_app varchar(300),
+telefone_app varchar(200),
+veiculo_app varchar(200),
+status_app varchar(100)
+);
+
+create table Funcionario(
+id_fun int primary key auto_increment,
+nome_fun varchar(300),
+email_fun varchar(300),
+funcao_fun varchar(200),
+rg_fun varchar(200),
+cpf_fun varchar(200),
+salario_fun double,
+ctps_fun varchar(200),
+foto_fun blob,
+telefone_fun varchar(200),
+data_nasc_fun date,
+sexo_fun varchar(100),
+rua_fun varchar(200),
+bairro_fun varchar(200),
+cidade_fun varchar(200),
+estado_fun varchar(200),
+numero_endereco_fun double,
+complemento_endereco_fun varchar(300)
+);
+
+create table Mesa(
+id_mes int primary key auto_increment,
+numero_mes int not null,
+capacidade_mes int,
+status_mes varchar(200),
+tipo_mes varchar(200)
+);
+
+create table Cliente(
+id_cli int primary key auto_increment,
+nome_cli varchar(300),
+cpf_cli varchar(200),
+rg_cli varchar(200),
+endereco_cli varchar(300),
+email_cli varchar(300),
+sexo_cli varchar(100),
+data_nasc_cli date,
+foto_fun blob,
+telefone_fun varchar(200),
+rua_fun varchar(200),
+bairro_fun varchar(200),
+cidade_fun varchar(200),
+estado_fun varchar(200),
+numero_endereco_fun double,
+complemento_endereco_fun varchar(300)
+);
+
+create table Reserva(
+id_res int primary key auto_increment,
+data_res date not null,
+horario_res time not null,
+numero_pessoas_res int,
+numero_mesa_res int,
+id_cli_fk int,
+foreign key(id_cli_fk) references Cliente(id_cli),
+id_mes_fk int,
+foreign key(id_mes_fk) references Mesa(id_mes)
+);
+
+create table Caixa(
+id_cai int primary key auto_increment,
+saldo_inicial_cai double,
+total_recebimentos_cai double,
+saldo_final_cai double,
+data_cai date,
+numero_cai int,
+total_pagamentos_cai double,
+hora_cai time,
+id_fun_fk int,
+foreign key(id_fun_fk) references Funcionario(id_fun)
+);
+
+create table Fornecedor(
+id_for int primary key auto_increment,
+nome_fantasia_for varchar(300),
+razao_social_for varchar(400),
+responsavel_for varchar(200),
+cnpj_for varchar(300),
+telefone_empresa_for varchar(200),
+telefone_responsavel_for varchar(200),
+email_for varchar(500),
+endereco_for varchar(500),
+setor_for varchar(200)
+);
+
+create table Despesa(
+id_des int primary key auto_increment,
+descricao_des varchar(500),
+data_des date,
+valor_des double,
+parcelamento_des varchar(100),
+forma_pagamento_des varchar(200),
+id_for_fk int,
+foreign key(id_for_fk) references Fornecedor(id_for)
+);
+
+create table Pagamento(
+id_pag int primary key auto_increment,
+data_pag date,
+parcela_pag varchar(100),
+valor_pag double,
+forma_pagamento_pag varchar(200),
+status_pag varchar(200),
+vencimento_pag date,
+hora_pag time,
+id_cai_fk int,
+foreign key(id_cai_fk) references Caixa(id_cai),
+id_des_fk int,
+foreign key(id_des_fk) references Despesa(id_des)
+);
+
+create table Pedido(
+id_ped int primary key auto_increment,
+hora_ped time,
+valor_ped double,
+descricao_ped varchar(600),
+id_mes_fk int,
+foreign key(id_mes_fk) references Mesa(id_mes),
+id_fun_fk int,
+foreign key(id_fun_fk) references Funcionario(id_fun)
+);
+
+create table Compra(
+id_com int primary key auto_increment,
+valor_com double,
+data_com date,
+hora_com time,
+parcelamento_com varchar(100),
+descricao_com varchar(800),
+id_fun_fk int,
+foreign key(id_fun_fk) references Funcionario(id_fun),
+id_for_fk int,
+foreign key(id_for_fk) references Fornecedor(id_for)
+);
+
+create table Produto(
+id_pro int primary key auto_increment,
+nome_pro varchar(200),
+marca_pro varchar(200),
+estoque_pro int,
+valor_pro double,
+tamanho_pro varchar(100),
+foto_pro blob
+);
+
+create table Pedido_produto(
+id_pp int primary key auto_increment,
+quantidade_pp int,
+id_ped_fk int,
+foreign key(id_ped_fk) references Pedido(id_ped),
+id_pro_fk int,
+foreign key(id_pro_fk) references Produto(id_pro)
+);
+
+create table Compra_produto(
+id_cp int primary key auto_increment,
+quantidade_cp int,
+id_com_fk int,
+foreign key(id_com_fk) references Compra(id_com),
+id_pro_fk int,
+foreign key(id_pro_fk) references Produto(id_pro)
+);
+
+create table Cardapio(
+id_card int primary key auto_increment,
+nome_card varchar(200),
+valor_card double,
+ingredientes_card varchar(300),
+descricao_card varchar(500),
+foto_card blob,
+classificacao_card varchar(200)
+);
+
+create table Cardapio_pedido(
+id_cardp int primary key auto_increment,
+quantidade_prap int,
+id_card_fk int,
+foreign key(id_card_fk) references Cardapio(id_card),
+id_ped_fk int,
+foreign key(id_ped_fk) references Pedido(id_ped)
+);
+
+create table Venda(
+id_ven int primary key auto_increment,
+valor_ven double,
+data_ven date,
+hora_ven time,
+parcelamento_ven varchar(100),
+forma_pagamento_ven varchar(100),
+tipo_ven varchar(100),
+id_fun_fk int,
+foreign key(id_fun_fk) references funcionario(id_fun),
+id_cli_fk int,
+foreign key(id_cli_fk) references Cliente(id_cli),
+id_ped_fk int,
+foreign key(id_ped_fk) references Pedido(id_ped)
+);
+
+create table Recebimento(
+id_rec int primary key auto_increment,
+data_rec date,
+parcela_rec varchar(100),
+valor_rec double,
+forma_recebimento_rec varchar(200),
+vencimento_rec varchar(200),
+hora_recebimento_rec time,
+id_cai_fk int,
+foreign key(id_cai_fk) references Caixa(id_cai),
+id_ven_fk int,
+foreign key(id_ven_fk) references Venda(id_ven)
+);
+
+create table Entrega(
+id_ent int primary key auto_increment,
+hora_saida_ent time,
+hora_entrega_ent time,
+endereco_ent varchar(400),
+endereco_alternativo_ent varchar(400),
+data_ent date,
+tempo_ent time,
+id_app_fk int,
+foreign key(id_app_fk) references Entregador_app(id_app),
+id_fun_fk int,
+foreign key(id_fun_fk) references Funcionario(id_fun),
+id_ven_fk int,
+foreign key(id_ven_fk) references Venda(id_ven)
+);
+
+create table Venda_cardapio(
+id_vp int primary key auto_increment,
+quantidade_vp int,
+id_ven_fk int,
+foreign key(id_ven_fk) references Venda(id_ven),
+id_card_fk int,
+foreign key(id_card_fk) references Cardapio(id_card)
+);
+
+create table Produto_venda(
+id_prov int primary key auto_increment,
+quantidade_prov int,
+id_ven_fk int,
+foreign key(id_ven_fk) references Venda(id_ven),
+id_pro_fk int,
+foreign key(id_pro_fk) references Produto(id_pro)
+);
