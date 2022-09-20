@@ -31,9 +31,10 @@ namespace restaurant_project.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var form = new TelaInicial();
-            form.Show();
-            this.Close();
+
+            //var form = new TelaInicial();
+            //form.Show();
+            //this.Close();
         }
 
         private void CliqueAqui_Click(object sender, MouseButtonEventArgs e)

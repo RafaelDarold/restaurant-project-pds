@@ -26,9 +26,9 @@
                 
                 
                 <Label Content="Usuário" FontSize="12" HorizontalAlignment="Center" />
-                <TextBox x:Name="txtUsuario" Margin="0 10" />
+                <TextBox x:Name="txtUsuario" Margin="0 10" TextAlignment="Center" />
                 <Label Content="Senha" FontSize="12" HorizontalAlignment="Center" />
-                <TextBox x:Name="txtSenha" Margin="0 10" TextAlignment="Center" />
+                <PasswordBox x:Name="txtSenha" Margin="0 10" Cursor="Arrow" Padding="50 0" Visibility="Visible" />
                 <Button Content="Entrar" Margin="0 10" HorizontalAlignment="Center" Click="Button_Click" Background="#FFFF9900" Foreground="White"/>
 
                 <WrapPanel HorizontalAlignment="Center">
@@ -38,5 +38,6 @@
             </StackPanel>
             
         </Grid>
+        <PasswordBox HorizontalAlignment="Left" Margin="1076,290,0,0" VerticalAlignment="Top" Width="120" Cursor="Arrow"/>
     </Grid>
 </Window>
