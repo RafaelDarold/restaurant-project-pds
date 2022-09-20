@@ -24,13 +24,6 @@ namespace restaurant_project.Views
             InitializeComponent();
         }
 
-        private void Funcionários_Click(object sender, RoutedEventArgs e)
-        {
-            var form = new CadastroFuncionario();
-            form.Show();
-            this.Close();
-        }
-
         private void pedido_Click(object sender, RoutedEventArgs e)
         {
             var form = new CadastroPedido();
@@ -55,6 +48,13 @@ namespace restaurant_project.Views
         private void Produtos_Click(object sender, RoutedEventArgs e)
         {
             var form = new CadastroProduto();
+            form.Show();
+            this.Close();
+        }
+
+        private void Funcionários_Click(object sender, RoutedEventArgs e)
+        {
+            var form = new CadastroFuncionario();
             form.Show();
             this.Close();
         }
