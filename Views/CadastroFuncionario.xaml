@@ -10,7 +10,7 @@
         <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
         <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
 
-        <Label x:Name="CadastroCPF" Content="Cadastro dos Funcionários&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,20,0,-18"/>
+        <Label x:Name="CadastroFunc" Content="Cadastro dos Funcionários&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,20,0,-18"/>
         <Label Content="Nome Completo" Margin="64,146,568,256" FontSize="15"/>
         <TextBox TextWrapping="Wrap" Margin="64,162,568,242"/>
 

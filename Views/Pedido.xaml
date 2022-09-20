@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="Pedido" Height="450" Width="800">
     <Grid>
+
+        <Label x:Name="CadastroPedido" Content="Pedido&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,20,0,-18"/>
+
+
+        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill" RenderTransformOrigin="0.494,0.38"/>
+        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
+
+        <Label Content="ID do pedido" Margin="124,197,508,206" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="124,217,508,187"/>
+
+        <Label Content="Valor" Margin="124,145,508,257" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="124,165,508,240"/>
+
+        <Label Content="Data" Margin="124,249,508,153" FontSize="15"/>
+        <DataGrid Margin="124,281,508,124"></DataGrid>
+
+        <Label Content="Hora" Margin="124,319,508,82" FontSize="15"/>
         
+
     </Grid>
 </Window>
