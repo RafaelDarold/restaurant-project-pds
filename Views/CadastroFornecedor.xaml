@@ -5,8 +5,70 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:restaurant_project.Views"
         mc:Ignorable="d"
-        Title="CadastroFornecedor" Height="450" Width="800" ResizeMode="NoResize">
-    <Grid>
-        
+        Title="CadastroFornecedor" Height="590" Width="800" ResizeMode="NoResize">
+
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Cadastro de Fornecedor" FontSize="24" FontFamily="Corbel Light"/>
+
+        <Grid Grid.Row="1" Background="#FFF9C784">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="10">
+                <Label Content="Informações de Registro" HorizontalAlignment="Center" FontSize="20" FontFamily="Corbel Light" FontWeight="Normal"/>
+
+                <Label Content="Nome Fantasia" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtNomeFantasia" Padding="8" Cursor="Arrow"></TextBox>
+
+                <Label Content="Razão Social" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtRazaoSoc" Padding="8"></TextBox>
+
+                <Label Content="Responsável" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtResp" Padding="8"></TextBox>
+
+                <Label Content="CNPJ" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtCNPJ" Padding="8"></TextBox>
+
+                <Label Content="Telefone da empresa" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtTelEmpresa" Padding="8"></TextBox>
+
+                <Label Content="Telefone do responsável" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtTelefoneResp" Padding="8"></TextBox>
+
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="10">
+
+                <Label Content="Email" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtEmail" Padding="8"></TextBox>
+
+                <Label Content="Endereço" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtEndereco" Padding="8"></TextBox>
+
+                <Label Content="Setor" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtSetor" Padding="8"></TextBox>
+
+
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button x:Name="cadastroBT" HorizontalAlignment="Right" Content="Cadastrar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White"/>
+            <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900"></Button>
+        </Grid>
+
     </Grid>
+
+
+
 </Window>

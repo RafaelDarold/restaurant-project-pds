@@ -25,7 +25,7 @@
                 <Label Content="Informações de Registro" FontSize="20" FontFamily="Corbel Light" FontWeight="Normal"/>
 
                 <Label Content="Nome do Funcionário" FontSize="18" FontFamily="Corbel"/>
-                <TextBox x:Name="txtNomeCliente" Padding="8"></TextBox>
+                <TextBox x:Name="txtNomeFuncionario" Padding="8"></TextBox>
 
                 <Label Content="Email" FontSize="18" FontFamily="Corbel"/>
                 <TextBox x:Name="txtEmail" Padding="8"></TextBox>
@@ -51,7 +51,6 @@
             </StackPanel>
 
             <StackPanel Grid.Column="1" Margin="10">
-                <Label Content="Informações de Localização" FontSize="20" FontFamily="Corbel Light"/>
 
                 <Label Content="Data de Nascimento" FontSize="18" FontFamily="Corbel"/>
                 <DatePicker x:Name="dataNascimentoDP"></DatePicker>
