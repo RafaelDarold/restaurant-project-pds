@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:restaurant_project.Views"
         mc:Ignorable="d"
-        Title="Cadastro de Cliente" Height="630" Width="800" ResizeMode="NoResize">
+        Title="Cadastro de Cliente" Height="630" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -16,7 +16,7 @@
 
         <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Cadastro de Cliente" FontSize="24" FontFamily="Corbel Light"/>
 
-        <Grid Grid.Row="1" Background="AliceBlue">
+        <Grid Grid.Row="1" Background="#FFF9C784">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -110,7 +110,8 @@
         </Grid>
 
         <Grid Grid.Row="2">
-            <Button x:Name="saveBT" HorizontalAlignment="Right" Content="Salvar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White" Click="saveBT_Click"></Button>
+            <Button x:Name="saveBT" HorizontalAlignment="Right" Content="Salvar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White"/>
+            <Button x:Name="backBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" Click="backBT_Click" BorderBrush="#FFFF9900"></Button>
         </Grid>
     </Grid>
 </Window>
