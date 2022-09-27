@@ -31,7 +31,23 @@ namespace restaurant_project.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string acesso = txtUsuario.Text;
+            string senha = pwSenha.Password.ToString();
 
+            if (acesso == "Usuario" && senha == "senha")
+            {
+                MessageBox.Show("Acesso feito com sucesso!");
+                var form = new TelaInicial();
+                form.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Erro no Login!", "ERRO", MessageBoxButton.OK, MessageBoxImage.Error);
+                pwSenha.Clear();
+                txtUsuario.Clear();
+                txtUsuario.Focus();
+            }
             //var form = new TelaInicial();
             //form.Show();
             //this.Close();
