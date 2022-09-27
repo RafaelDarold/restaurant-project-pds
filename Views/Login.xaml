@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:restaurant_project.Views"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800" ResizeMode="NoResize">
+        Title="Login" Height="450" Width="800" ResizeMode="NoResize" Icon="/Images/profile-user.png" WindowStartupLocation="CenterScreen">
     <Grid>
         <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
         <Image Margin="0,0,647,269" Source="/Images/Blob Direita.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
