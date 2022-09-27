@@ -31,10 +31,36 @@ namespace restaurant_project.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Entrar();
+        }
+
+        private void CliqueAqui_Click(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                pwSenha.Focus();
+            }
+        }
+
+        private void pwSenha_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Entrar();
+            }
+        }
+
+        private void Entrar()
+        {
             string acesso = txtUsuario.Text;
             string senha = pwSenha.Password.ToString();
 
-            if (acesso == "Usuario" && senha == "senha")
+            if (acesso.ToUpper() == "USUARIO" && senha.ToUpper() == "SENHA")
             {
                 MessageBox.Show("Acesso feito com sucesso!");
                 var form = new TelaInicial();
@@ -53,9 +79,9 @@ namespace restaurant_project.Views
             //this.Close();
         }
 
-        private void CliqueAqui_Click(object sender, MouseButtonEventArgs e)
+        private void LoginWindow_Activated(object sender, EventArgs e)
         {
-
+            txtUsuario.Focus();
         }
     }
 }
