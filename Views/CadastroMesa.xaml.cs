@@ -23,5 +23,10 @@ namespace restaurant_project.Views
         {
             InitializeComponent();
         }
+
+        private void txtEstado_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
