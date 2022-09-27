@@ -31,10 +31,10 @@
                 <PasswordBox x:Name="pwSenha" Margin="0 10" Cursor="Arrow" HorizontalContentAlignment="Center"/>
                 <Button Content="Entrar" Margin="0 10" HorizontalAlignment="Center" Click="Button_Click" Background="#FFFF9900" Foreground="White"/>
 
-                <WrapPanel HorizontalAlignment="Center">
+                <!--<WrapPanel HorizontalAlignment="Center">
                     <Label Content="Esqueceu a senha?"  VerticalAlignment="Top" />
                     <Label Content="Clique aqui" MouseDoubleClick="CliqueAqui_Click" Foreground="#FFFF9900"/>
-                </WrapPanel>
+                </WrapPanel>-->
             </StackPanel>
             
         </Grid>
