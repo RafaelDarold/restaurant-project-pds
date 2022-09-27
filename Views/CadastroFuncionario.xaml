@@ -4,44 +4,126 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="CadastroFuncionario" Height="450" Width="800" ResizeMode="NoResize">
-    <Grid>
+        Title="CadastroFuncionario" Height="690" Width="800" ResizeMode="NoResize">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
 
-        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
-        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
 
-        <Label x:Name="CadastroFunc" Content="Cadastro dos Funcionários&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,20,0,-18"/>
-        <Label Content="Nome Completo" Margin="64,146,568,256" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="64,162,568,242"/>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Cadastro de Funcionário" FontSize="24" FontFamily="Corbel Light"/>
 
-        <Label Content="E-mail" Margin="64,239,568,164" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="64,255,568,149"/>
+        <Grid Grid.Row="1" Background="#FFF9C784">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-        <Label Content="CPF" Margin="64,194,568,208" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="64,210,568,195"/>
+            <StackPanel Grid.Column="0" Margin="10">
+                <Label Content="Informações de Registro" FontSize="20" FontFamily="Corbel Light" FontWeight="Normal"/>
 
-        <Label Content="RG" Margin="296,130,336,272" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="296,151,336,253"/>
+                <Label Content="Nome do Funcionário" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtNomeCliente" Padding="8"></TextBox>
 
-        <Label Content="Telefone" Margin="296,231,336,172" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="296,247,336,155"/>
+                <Label Content="Email" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtEmail" Padding="8"></TextBox>
 
-        <Label Content="CPF" Margin="296,182,336,220" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="296,202,336,203"/>
+                <Label Content="Função" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtfuncao" Padding="8"></TextBox>
 
-        <Label Content="Endereço" Margin="296,282,336,120" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="296,298,336,107"/>
+                <Label Content="RG" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtRG" Padding="8"></TextBox>
 
-        <Label Content="Cidade" Margin="296,326,336,76" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="296,342,336,62"/>
+                <Label Content="CPF" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtInscricaoEstadual" Padding="8"></TextBox>
 
-        <Label Content="Estado Civil" Margin="546,177,86,226" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="546,193,86,211"/>
+                <Label Content="Salário" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtSalario" Padding="8"></TextBox>
 
-        <Label Content="Cargo" Margin="546,118,86,284" FontSize="15"/>
-        <TextBox TextWrapping="Wrap" Margin="546,136,86,269"/>
+                <Label Content="CTPS" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtCTPS" Padding="8"></TextBox>
 
-        <Label Content="Data de nascimento" Margin="546,237,86,166" FontSize="15"/>
-        <DataGrid Margin="551,268,103,137"></DataGrid>
+                <Label Content="Telefone" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtTelefone" Padding="8"></TextBox>
+
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="10">
+                <Label Content="Informações de Localização" FontSize="20" FontFamily="Corbel Light"/>
+
+                <Label Content="Data de Nascimento" FontSize="18" FontFamily="Corbel"/>
+                <DatePicker x:Name="dataNascimentoDP"></DatePicker>
+
+                <Label Content="Sexo" FontSize="18" FontFamily="Corbel"/>
+                <ComboBox x:Name="txtSexo" Padding="8" Width="380">
+                    <ComboBoxItem>Feminino</ComboBoxItem>
+                    <ComboBoxItem>Masculino</ComboBoxItem>
+                </ComboBox>
+
+                <WrapPanel>
+                    <Label Content="Rua" FontSize="18" Margin="0 0 160 0" FontFamily="Corbel"/>
+                    <Label Content="Bairro" FontSize="18" FontFamily="Corbel"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBox x:Name="txtRua" Padding="8" Width="150" Margin="0 0 50 0"></TextBox>
+                    <TextBox x:Name="txtNumeroCasa" Padding="8" Width="100" Cursor="Arrow"></TextBox>
+                </WrapPanel>
+
+                <WrapPanel>
+                    <Label Content="Cidade" FontSize="18" Margin="0 0 145 0" FontFamily="Corbel"/>
+                    <Label Content="Nº" FontSize="18" FontFamily="Corbel"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBox x:Name="txtBairro" Padding="8" Width="150" Margin="0 0 50 0"></TextBox>
+                    <TextBox x:Name="txtComplemento" Padding="8" Width="150"></TextBox>
+                </WrapPanel>
+
+                <WrapPanel>
+                    <Label Content="Complemento" FontSize="18" Margin="0 0 90 0" FontFamily="Corbel"/>
+                    <Label Content="Estado" FontSize="18" FontFamily="Corbel"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBox x:Name="txtComplem" Padding="8" Width="170" Margin="0 0 30 0"></TextBox>
+                    <ComboBox x:Name="txtEstado" Padding="8" Width="100">
+                        <ComboBoxItem>Acre</ComboBoxItem>
+                        <ComboBoxItem>Alagoas</ComboBoxItem>
+                        <ComboBoxItem>Amapá</ComboBoxItem>
+                        <ComboBoxItem>Amazonas</ComboBoxItem>
+                        <ComboBoxItem>Bahia</ComboBoxItem>
+                        <ComboBoxItem>Ceará</ComboBoxItem>
+                        <ComboBoxItem>Distrito Federal</ComboBoxItem>
+                        <ComboBoxItem>Espírito Santo</ComboBoxItem>
+                        <ComboBoxItem>Goiás</ComboBoxItem>
+                        <ComboBoxItem>Maranhão</ComboBoxItem>
+                        <ComboBoxItem>Mato Grosso</ComboBoxItem>
+                        <ComboBoxItem>Mato Grosso do Sul</ComboBoxItem>
+                        <ComboBoxItem>Minas Gerais</ComboBoxItem>
+                        <ComboBoxItem>Pará</ComboBoxItem>
+                        <ComboBoxItem>Paraíba</ComboBoxItem>
+                        <ComboBoxItem>Paraná</ComboBoxItem>
+                        <ComboBoxItem>Pernambuco</ComboBoxItem>
+                        <ComboBoxItem>Piauí</ComboBoxItem>
+                        <ComboBoxItem>Rio de Janeiro</ComboBoxItem>
+                        <ComboBoxItem>Rio Grande do Norte</ComboBoxItem>
+                        <ComboBoxItem>Rio Grande do Sul</ComboBoxItem>
+                        <ComboBoxItem>Rondônia</ComboBoxItem>
+                        <ComboBoxItem>Roraima</ComboBoxItem>
+                        <ComboBoxItem>Santa Catarina</ComboBoxItem>
+                        <ComboBoxItem>São Paulo</ComboBoxItem>
+                        <ComboBoxItem>Sergipe</ComboBoxItem>
+                        <ComboBoxItem>Tocantins</ComboBoxItem>
+                    </ComboBox>
+                </WrapPanel>
+
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button x:Name="cadastroBT" HorizontalAlignment="Right" Content="Cadastrar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White"/>
+            <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900"></Button>
+        </Grid>
+
     </Grid>
 </Window>
