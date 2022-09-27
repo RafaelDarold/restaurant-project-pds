@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="CadastroFuncionario" Height="690" Width="800" ResizeMode="NoResize">
+        Title="CadastroFuncionario" Height="690" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -121,7 +121,7 @@
 
         <Grid Grid.Row="2">
             <Button x:Name="cadastroBT" HorizontalAlignment="Right" Content="Cadastrar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White"/>
-            <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900"></Button>
+            <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900" Click="voltarBT_Click"></Button>
         </Grid>
 
     </Grid>

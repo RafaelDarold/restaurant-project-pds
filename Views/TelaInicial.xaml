@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:restaurant_project.Views"
         mc:Ignorable="d"
-        Title="TelaInicial" Height="500" Width="800" ResizeMode="NoResize">
+        Title="TelaInicial" Height="500" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid RenderTransformOrigin="0.745,0.507">
-        <Image Margin="238,65,238,33" Source="/Images/Card Background.png" Stretch="Fill"/>
+        <Image Margin="238,65,238,10" Source="/Images/Card Background.png" Stretch="Fill"/>
         <Label x:Name="Comidas_vovó" Content="Comidas da Vovó&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,19,0,33"/>
         <Button x:Name="pedido" Content="Pedido" HorizontalAlignment="Center" Margin="0,83,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34" Cursor="Hand" Click="pedido_Click"/>
         <Button x:Name="Pagamento" Content="Pagamento" HorizontalAlignment="Center" Margin="0,142,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="35" Click="Pagamento_Click"/>
@@ -16,7 +16,8 @@
         <Button x:Name="Funcionários" Content="funcionários" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="35" Click="Funcionários_Click"/>
         <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
         <Image Margin="0,0,647,319" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
-        <Button x:Name="Cliente" Content="Cliente" HorizontalAlignment="Center" Margin="0,377,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34" Click="Cliente_Click" Cursor="Hand"/>
+        <Button x:Name="Cliente" Content="Cliente" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34" Click="Cliente_Click"/>
+        <Button x:Name="Entregador_App" Content="Entregador" HorizontalAlignment="Center" Margin="0,417,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34" Cursor="Hand" Click="Entregador_App_Click"/>
 
 
     </Grid>

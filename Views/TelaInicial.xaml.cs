@@ -65,5 +65,12 @@ namespace restaurant_project.Views
             form.Show();
             this.Close();
         }
+
+        private void Entregador_App_Click(object sender, RoutedEventArgs e)
+        {
+            var form = new CadastroEntregador();
+            form.Show();
+            this.Close();
+        }
     }
 }

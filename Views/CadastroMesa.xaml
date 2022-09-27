@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:restaurant_project.Views"
         mc:Ignorable="d"
+<<<<<<< HEAD
         Title="CadastroMesa" Height="450" Width="800" ResizeMode="NoResize">
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -12,6 +13,12 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
+=======
+        Title="CadastroMesa" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
+        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
+>>>>>>> master
 
         <Grid Grid.Row="1" Background="#FFF9C784">
             <Grid.ColumnDefinitions>
