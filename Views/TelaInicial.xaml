@@ -18,7 +18,7 @@
         <Image Margin="0,0,647,319" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
         <Button x:Name="Cliente" Content="Cliente" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34" Click="Cliente_Click"/>
         <Button x:Name="Entregador_App" Content="Entregador" HorizontalAlignment="Center" Margin="0,417,0,0" VerticalAlignment="Top" BorderBrush="#FFDE9143" BorderThickness="0,1,1,1" Background="#FFE69F58" Width="156" Height="34" Cursor="Hand" Click="Entregador_App_Click"/>
-        <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Sair" Height="30" Width="100" Margin="10,421,0,33" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFFBB77" Foreground="White" BorderBrush="#FFFF9900" Click="voltarBT_Click"/>
+        <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Sair" Height="30" Width="100" Margin="10,421,0,33" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFFBB77" Foreground="White" BorderBrush="#FFFF9900"/>
 
 
     </Grid>
