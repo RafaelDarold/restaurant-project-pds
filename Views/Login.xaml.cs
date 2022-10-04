@@ -57,26 +57,26 @@ namespace restaurant_project.Views
 
         private void Entrar()
         {
-            string acesso = txtUsuario.Text;
-            string senha = pwSenha.Password.ToString();
+            //string acesso = txtUsuario.Text;
+            //string senha = pwSenha.Password.ToString();
 
-            if (acesso.ToUpper() == "USUARIO" && senha.ToUpper() == "SENHA")
-            {
-                MessageBox.Show("Acesso feito com sucesso!");
-                var form = new TelaInicial();
-                form.Show();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Erro no Login!", "ERRO", MessageBoxButton.OK, MessageBoxImage.Error);
-                pwSenha.Clear();
-                txtUsuario.Clear();
-                txtUsuario.Focus();
-            }
-            //var form = new TelaInicial();
-            //form.Show();
-            //this.Close();
+            //if (acesso.ToUpper() == "USUARIO" && senha.ToUpper() == "SENHA")
+            //{
+            //    MessageBox.Show("Acesso feito com sucesso!");
+            //    var form = new TelaInicial();
+            //    form.Show();
+            //    this.Close();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Erro no Login!", "ERRO", MessageBoxButton.OK, MessageBoxImage.Error);
+            //    pwSenha.Clear();
+            //    txtUsuario.Clear();
+            //    txtUsuario.Focus();
+            //}
+            var form = new TelaInicial();
+            form.Show();
+            this.Close();
         }
 
         private void LoginWindow_Activated(object sender, EventArgs e)
