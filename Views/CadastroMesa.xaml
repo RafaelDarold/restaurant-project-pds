@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:restaurant_project.Views"
         mc:Ignorable="d"
-<<<<<<< HEAD
         Title="CadastroMesa" Height="450" Width="800" ResizeMode="NoResize">
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -13,49 +12,47 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-=======
-        Title="CadastroMesa" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
-        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
->>>>>>> master
+        <Grid>
+            <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill"/>
+            <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
 
-        <Grid Grid.Row="1" Background="#FFF9C784">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="1" Background="#FFF9C784">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-            <StackPanel Grid.Column="0" Margin="10">
+                <StackPanel Grid.Column="0" Margin="10">
 
-                <Label Content="Número" FontSize="18" FontFamily="Corbel"/>
-                <TextBox x:Name="txtNomeCliente" Padding="8"></TextBox>
+                    <Label Content="Número" FontSize="18" FontFamily="Corbel"/>
+                    <TextBox x:Name="txtNomeCliente" Padding="8"></TextBox>
 
-                <Label Content="Capacidade" FontSize="18" FontFamily="Corbel"/>
-                <TextBox x:Name="txtRendaFamiliar" Padding="8"></TextBox>
+                    <Label Content="Capacidade" FontSize="18" FontFamily="Corbel"/>
+                    <TextBox x:Name="txtRendaFamiliar" Padding="8"></TextBox>
 
-                <WrapPanel>
-                    <Label Content="Status" FontSize="18" FontFamily="Corbel"/>
-                </WrapPanel>
-                <WrapPanel>
-                    <ComboBox x:Name="txtEstado" Padding="8" Width="100" SelectionChanged="txtEstado_SelectionChanged">
-                        <ComboBoxItem>Acre</ComboBoxItem>
-                        <ComboBoxItem>Alagoas</ComboBoxItem>
-                    </ComboBox>
-                </WrapPanel>
+                    <WrapPanel>
+                        <Label Content="Status" FontSize="18" FontFamily="Corbel"/>
+                    </WrapPanel>
+                    <WrapPanel>
+                        <ComboBox x:Name="txtEstado" Padding="8" Width="100" SelectionChanged="txtEstado_SelectionChanged">
+                            <ComboBoxItem>Acre</ComboBoxItem>
+                            <ComboBoxItem>Alagoas</ComboBoxItem>
+                        </ComboBox>
+                    </WrapPanel>
 
-                <Label Content="Tipo    " FontSize="18" FontFamily="Corbel"/>
+                    <Label Content="Tipo    " FontSize="18" FontFamily="Corbel"/>
 
 
-            </StackPanel>
-            <ComboBox x:Name="txtEstado_Copy" Padding="8" SelectionChanged="txtEstado_SelectionChanged" Margin="10,236,690,0" VerticalAlignment="Top" RenderTransformOrigin="0.41,0.532">
-                <ComboBoxItem Content="Acre"/>
-                <ComboBoxItem Content="Alagoas"/>
-            </ComboBox>
-        </Grid>
+                </StackPanel>
+                <ComboBox x:Name="txtEstado_Copy" Padding="8" SelectionChanged="txtEstado_SelectionChanged" Margin="10,236,690,0" VerticalAlignment="Top" RenderTransformOrigin="0.41,0.532">
+                    <ComboBoxItem Content="Acre"/>
+                    <ComboBoxItem Content="Alagoas"/>
+                </ComboBox>
+            </Grid>
 
-        <Grid Grid.Row="2">
-            <Button x:Name="saveBT" HorizontalAlignment="Right" Content="Salvar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White"/>
-            <Button x:Name="backBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900"></Button>
+            <Grid Grid.Row="2">
+                <Button x:Name="saveBT" HorizontalAlignment="Right" Content="Salvar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White"/>
+                <Button x:Name="backBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900"></Button>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
