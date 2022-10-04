@@ -72,5 +72,7 @@ namespace restaurant_project.Views
             form.Show();
             this.Close();
         }
+
+       
     }
 }

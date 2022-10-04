@@ -28,5 +28,13 @@ namespace restaurant_project.Views
         {
 
         }
+
+        private void backBT_Click(object sender, RoutedEventArgs e)
+        {
+            var form = new TelaInicial();
+            form.Show();
+            this.Close();
+        }
     }
 }
+

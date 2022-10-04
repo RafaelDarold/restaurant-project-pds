@@ -23,5 +23,13 @@ namespace restaurant_project.Views
         {
             InitializeComponent();
         }
+
+        private void voltarBT_Click(object sender, RoutedEventArgs e)
+        {
+            var form = new TelaInicial();
+            form.Show();
+            this.Close();
+        }
     }
 }
+

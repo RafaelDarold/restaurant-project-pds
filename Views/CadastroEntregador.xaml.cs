@@ -23,8 +23,7 @@ namespace restaurant_project.Views
         {
             InitializeComponent();
         }
-
-        private void backBT_Click(object sender, RoutedEventArgs e)
+        private void voltarBT_Click(object sender, RoutedEventArgs e)
         {
             var form = new TelaInicial();
             form.Show();
@@ -32,3 +31,4 @@ namespace restaurant_project.Views
         }
     }
 }
+
