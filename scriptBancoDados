@@ -57,14 +57,14 @@ endereco_cli varchar(300),
 email_cli varchar(300),
 sexo_cli varchar(100),
 data_nasc_cli date,
-foto_fun blob,
-telefone_fun varchar(200),
-rua_fun varchar(200),
-bairro_fun varchar(200),
-cidade_fun varchar(200),
-estado_fun varchar(200),
-numero_endereco_fun double,
-complemento_endereco_fun varchar(300)
+foto_cli blob,
+telefone_cli varchar(200),
+rua_cli varchar(200),
+bairro_cli varchar(200),
+cidade_cli varchar(200),
+estado_cli varchar(200),
+numero_endereco_cli double,
+complemento_endereco_cli varchar(300)
 );
 
 create table Reserva(
