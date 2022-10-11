@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 
 namespace restaurant_project.Database
 {
-    public class Conexao
+    internal class Conexao
     {
         private static string host = "localhost";
 
@@ -32,9 +32,9 @@ namespace restaurant_project.Database
                 connection.Open();
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
@@ -47,9 +47,25 @@ namespace restaurant_project.Database
 
                 return command;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
+            }
+        }
+
+        public MySqlCommand Query(string query)
+        {
+            try
+            {
+                command = connection.CreateCommand();
+                command.CommandType = CommandType.Text;
+                command.CommandText = query;
+
+                return command;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
