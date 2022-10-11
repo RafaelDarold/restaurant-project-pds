@@ -7,7 +7,80 @@
         mc:Ignorable="d"
         Title="CadastroCaixa" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10,5,0,399" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900"/>
+        <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10,394,0,10" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900"/>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+
+        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Caixa" FontSize="24" FontFamily="Corbel Light"/>
+
+        <Grid Grid.Row="1" Background="#FFF9C784">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Margin="10">
+                <Label Content="Informações de Registro" FontSize="20" FontFamily="Corbel Light" FontWeight="Normal"/>
+
+                <Label Content="Data e hora da abertura do Caixa" FontSize="18" FontFamily="Corbel"/>
+                <DatePicker Width="357" Height="33"/>
+
+                <Label Content="Renda Familiar" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtRendaFamiliar" Padding="8"></TextBox>
+
+                <Label Content="Telefone" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtTelefone" Padding="8"></TextBox>
+
+                <Label Content="CPF" FontSize="18" FontFamily="Corbel"/>
+                <TextBox x:Name="txtInscricaoEstadual" Padding="8"></TextBox>
+
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="10">
+                <WrapPanel>
+                    <Label Content="Rua" FontSize="18" Margin="0 0 160 0" FontFamily="Corbel"/>
+                    <Label Content="Nº" FontSize="18" FontFamily="Corbel"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBox x:Name="txtRua" Padding="8" Width="150" Margin="0 0 50 0"></TextBox>
+                    <TextBox x:Name="txtNumeroCasa" Padding="8" Width="100" Cursor="Arrow"></TextBox>
+                </WrapPanel>
+
+                <WrapPanel>
+                    <Label Content="Bairro" FontSize="18" Margin="0 0 145 0" FontFamily="Corbel"/>
+                    <Label Content="Complemento" FontSize="18" FontFamily="Corbel"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBox x:Name="txtBairro" Padding="8" Width="150" Margin="0 0 50 0"></TextBox>
+                    <TextBox x:Name="txtComplemento" Padding="8" Width="150"></TextBox>
+                </WrapPanel>
+
+                <WrapPanel>
+                    <Label Content="CEP" FontSize="18" Margin="0 0 90 0" FontFamily="Corbel"/>
+                    <Label Content="Cidade" FontSize="18" Margin="0 0 60 0" FontFamily="Corbel"/>
+                    <Label Content="Funcionário" FontSize="18" FontFamily="Corbel"/>
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBox x:Name="txtCep" Padding="8" Width="100" Margin="0 0 30 0"></TextBox>
+                    <TextBox x:Name="txtCidade" Padding="8" Width="100" Margin="0 0 20 0"></TextBox>
+                    <ComboBox x:Name="txtFunc" Padding="8" Width="100">
+                    </ComboBox>
+                </WrapPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button x:Name="saveBT" HorizontalAlignment="Right" Content="Salvar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FFFF9900" Foreground="White"/>
+            <Button x:Name="backBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="10 0" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" Click="backBT_Click" BorderBrush="#FFFF9900"></Button>
+        </Grid>
+
+
 
     </Grid>
 </Window>

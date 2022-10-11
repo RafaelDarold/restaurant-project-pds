@@ -7,7 +7,26 @@
         mc:Ignorable="d"
         Title="CadastroPedido" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="28,24,0,380" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900" Click="voltarBT_Click"/>
+        <Button x:Name="voltarBT" HorizontalAlignment="Left" Content="Voltar" Height="30" Width="100" Margin="22,394,0,10" Cursor="Hand" FontWeight="Normal" FontFamily="Corbel" FontSize="16" Background="#FF16A5B7" Foreground="White" BorderBrush="#FFFF9900" Click="voltarBT_Click"/>
+
+        <Label x:Name="CadastroPedido" Content="Pedido&#xA;" AutomationProperties.IsOffscreenBehavior="FromClip" ScrollViewer.HorizontalScrollBarVisibility="Auto" FontSize="25" FontStyle="Italic" FontWeight="Regular" Height="432" HorizontalAlignment="Center" Margin="0,20,0,-18"/>
+
+        <Image Margin="647,269,0,0" Source="/Images/Blob Direita.png" Stretch="Fill" RenderTransformOrigin="0.494,0.38"/>
+        <Image Margin="0,0,647,269" Source="/Images/Blob Esquerda.png" Stretch="Fill" Height="165.04" Width="153"/>
+
+        <Label Content="ID do pedido" Margin="124,195,508,207" FontSize="15"/>
+        <ComboBox x:Name="txtIDpedido" Padding="8" Width="100" Margin="124,220,576,0" VerticalAlignment="Top"/>
+
+        <Label Content="Valor" Margin="124,147,508,254" FontSize="15"/>
+        <TextBox TextWrapping="Wrap" Margin="124,165,508,240"/>
+
+        <Label Content="Data" Margin="124,260,508,142" FontSize="15"/>
+
+        <Label Content="Hora" Margin="124,331,508,70" FontSize="15"/>
+        
+        
+
+
 
     </Grid>
 </Window>
